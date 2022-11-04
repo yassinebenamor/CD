@@ -2,9 +2,9 @@ pipeline{
     agent any
     //tools {}
     stages{
-        stage('Getting code from git'){
+        stage('Build'){
             steps{
-              echo 'pulling ...';
+              sh 'Ansible-playbook ansible/build.yml -i ansible/inventory/host.yml';
             }
         }
     }
