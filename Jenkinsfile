@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-              sh 'ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -b';
+              sh 'ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -e "ansible_become_password=yassine"';
             }
         }
     }
