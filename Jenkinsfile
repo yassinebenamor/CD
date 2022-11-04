@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-              sh 'ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml --become-user=root';
+              sh 'ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -b';
             }
         }
     }
