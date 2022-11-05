@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    tools {
-    ansible 'ansible'
-    }
+    //tools {}
     stages{
         stage('Build'){
             steps{
