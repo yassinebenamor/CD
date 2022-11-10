@@ -4,7 +4,7 @@
   docker_image: 
     name: myapp-cd
     build:
-     path: /var/lib/jenkins/workspace/
+     path: /var/lib/jenkins/workspace/Project-CD 
      pull: no
     source: build
     state: present
